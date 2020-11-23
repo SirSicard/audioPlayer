@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Player HTML before script loads -->
+    <div class="player">
+        <div class="main">
+            <audio></audio>
+            <div class="thumbnail">
+                <img src="files/Airae.jpg" alt="Airae album cover">
+            </div>
+            <!-- Player seekbar -->
+            <div class="seekbar">
+				<input type="range">
+            </div>
+            <!-- end of player seekbar -->
+
+            <!-- Player details -->
+            <div class="details">
+                <h2>songname</h2>
+                <p>Artistname</p>
+            </div>
+            <!-- end of player details -->
+
+            <!-- Player controls -->
+            <div class="controls">
+                <div class="prev-control">
+                    <i class="fa fa-backward"></i>
+                </div>
+                <div class="play-pause-control">
+                    <i class="fa fa-play"></i>
+                    <i class="fa fa-pause"></i>
+                </div>
+                <div class="next-control">
+                    <i class="fa fa-forward"></i>
+                </div>
+            </div>
+            <!-- end of player controls -->
+
+        </div>
+
+        <!-- HTML for drop down list -->
+        <div class="player-list">
+            <div class="toggle-list">
+                <i class="fa fa-angle-up"></i>
+                <i class="fa fa-angle-down"></i>
+            </div>
+
+            <!-- search bar inside drop-down list -->
+            <input class="searchbar" id="keyword" type="text" placeholder="Type to search playlist"  oninput="callTheSearchFunction()">
+            <!-- end of search bar -->
+
+            <div class="list" id="playlist">
+            </div>  
+        </div>
+        <!-- end of HTML for drop down list -->
+    </div>
+    <!-- end of player HTML before script loads -->
+
+    <!-- script runs after HTML insert -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- End of script -->
+</body>
+</html>
